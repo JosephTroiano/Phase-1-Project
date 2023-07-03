@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+    margin-top: 0;
+    background-color: rgb(75, 32, 32);
+    
+}
+h1 {
+    font-size: 70px;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
