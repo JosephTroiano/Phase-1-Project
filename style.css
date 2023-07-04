@@ -4,6 +4,7 @@ header {
     background-color: rgb(75, 32, 32);
     
     
+    
 }
 
 h1 {
@@ -166,8 +167,8 @@ h1 {
   }
   
  .horizontal-bar {
-  width: 85%;
-  height: 4px;
+  width: 90%;
+  height: 2px;
   background-color: rgb(75, 32, 32);
   margin-top: 20px;
   margin-bottom: 20px;
@@ -202,7 +203,7 @@ h1 {
 }
 
 .last-bar {
-  width: 85%;
-  height: 4px;
+  width: 90%;
+  height: 2px;
   background-color: rgb(75, 32, 32);
 }
