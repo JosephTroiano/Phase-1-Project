@@ -1,10 +1,7 @@
 header {
     text-align: center;
-    margin-top: 0;
-    background-color: rgb(75, 32, 32);
-    
-    
-    
+    background-color: rgb(75, 32, 32); 
+    height: 90px;   
 }
 
 h1 {
@@ -27,39 +24,29 @@ h1 {
     
 }
 .recipe-card {
-    width: 280px; /* Adjust the width as per your preference */
-    margin: 20px; /* Adjust the margin as per your preference */
-    padding: 10px; /* Adjust the padding as per your preference */
-    border: 2px solid rgb(75, 32, 32); /* Optional: Add a border around each card */
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack the card contents vertically */
-    align-items: center;
-    
-    
+    width: 280px;
+    margin: 20px; 
+    padding: 10px; 
+    border: 2px solid rgb(75, 32, 32); 
 }
 
 .recipe-card img {
-    width: 100%; /* Make the image fill the entire width of the card */
-    height: 200px; /* Adjust the height as per your preference */
-    object-fit: cover; /* Maintain aspect ratio and cover the image area */
+    width: 280px; 
+    height: 200px; 
+    object-fit: cover; 
     border: 1px solid rgb(75, 32, 32);
+    
     
 }
 
 #details-btn {
-  width: 60%;
-  margin-top: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 50%;
+  margin-top: 15px;
   font-size: 20px;
-  color: rgb(75, 32, 32);
-  
-}
-
-#likes-btn {
-  width: 25%;
-  margin-top: 10px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
+  text-align: center;
+  margin-left: 70px;
+  
 }
 
 .recipe-card h2 {
@@ -109,9 +96,15 @@ h1 {
   
   #fav-btn {
     font-size: 35px;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     cursor: pointer;
+    text-align: center;
+    
+  }
+
+  #fav-btn.favorite {
+    color:yellow;
   }
 
   .expanded-card {
@@ -137,8 +130,8 @@ h1 {
   }
   
   .expanded-card img {
-    max-width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     margin-bottom: 10px;
     
   }
@@ -191,19 +184,44 @@ h1 {
 #filter-select {
   width: 120px;
   font-size: 18px;
-  padding: 10px;
+  padding: 5px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
-}
-#favorites-section h2 {
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 50px;
-  color: rgb(75, 32, 32);
 }
 
 .last-bar {
   width: 90%;
   height: 2px;
   background-color: rgb(75, 32, 32);
+  margin-top: 35px;
+}
+
+#filter-container label {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  color: rgb(75, 32, 32);
+}
+
+#favorites-title {
+  font-size: 60px;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(75, 32, 32);
+  text-align: center;
+}
+
+#favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#recipes-title {
+  font-size: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(75, 32, 32);
+  text-align: center;
+  margin-bottom: 25px;
 }

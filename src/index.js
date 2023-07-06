@@ -1,4 +1,35 @@
-document.addEventListener('DOMContentLoaded', fetchRecipes)
+document.addEventListener('DOMContentLoaded', () => {
+  fetchRecipes();
+
+  const filterSeletct = document.getElementById('filter-select')
+  filterSeletct.addEventListener('change', handleFilterChange);
+});
+
+// Function to handle filter change
+function handleFilterChange() {
+  const filterSelect = document.getElementById('filter-select');
+  const selectedType = filterSelect.value;
+  const recipeCards = document.getElementsByClassName('recipe-card');
+
+  console.log('Selected Type:', selectedType);
+
+  Array.from(recipeCards).forEach(card => {
+      const recipeType = card.getAttribute('data-type');
+      console.log('Recipe Type:', recipeType);
+
+      if (selectedType === 'all' || recipeType === selectedType) {
+          console.log('Display:', card.id);
+          card.style.display = 'block';
+      } else {
+          console.log('Hide:', card.id);
+          card.style.display = 'none';
+      }
+  });
+}
+
+
+
+
 // Fetch recipes from server
 function fetchRecipes() {
     const url = `http://localhost:3000/recipes`
@@ -11,8 +42,9 @@ function fetchRecipes() {
     })
     .catch(error => {
         console.error(error)
-    })
-}
+    });
+};
+
 // Function to create card for each recipe
 function createRecipeCard(recipe) {
     const recipeContainer = document.getElementById('recipe-container');
@@ -20,39 +52,37 @@ function createRecipeCard(recipe) {
     const recipeCard = document.createElement('div');
     recipeCard.classList.add('recipe-card');
     recipeCard.id = recipe.id;
+    recipeCard.setAttribute('data-type', recipe.type);
 
-    const recipeName = document.createElement('h2')
+    const recipeName = document.createElement('h2');
     recipeName.textContent = recipe.name;
 
-    const recipeImage = document.createElement('img')
+    const recipeImage = document.createElement('img');
     recipeImage.src = recipe.image;
 
-    const viewRecipe = document.createElement('button')
-    viewRecipe.id = 'details-btn'
-    viewRecipe.textContent = 'View Recipe'
+    const viewRecipe = document.createElement('button');
+    viewRecipe.id = 'details-btn';
+    viewRecipe.textContent = 'View Recipe';
     viewRecipe.addEventListener('click', () => {
-        showRecipe(recipe.id)
-    })
+        showRecipe(recipe.id);
+    });
     
+    const favoriteButton = document.createElement('p');
+    favoriteButton.id = 'fav-btn';
+    favoriteButton.textContent = '✩';
+    favoriteButton.addEventListener('click', () => {
+      toggleFavorite(recipeCard)
+    });
 
-    const recipeLikes = document.createElement('button')
-    recipeLikes.textContent = `Likes: ${recipe.likes}`
-    recipeLikes.id = 'likes-btn'
+    recipeCard.appendChild(recipeName);
+    recipeCard.appendChild(recipeImage);
+    recipeCard.appendChild(viewRecipe);
+    
+    recipeCard.appendChild(favoriteButton);
 
-    const favoriteButton = document.createElement('p')
-    favoriteButton.id = 'fav-btn'
-    favoriteButton.textContent = '✩'
-
-    recipeCard.appendChild(recipeName)
-    recipeCard.appendChild(recipeImage)
-    recipeCard.appendChild(viewRecipe)
-    recipeCard.appendChild(recipeLikes)
-    recipeCard.appendChild(favoriteButton)
-
-    recipeContainer.appendChild(recipeCard)
+    recipeContainer.appendChild(recipeCard);
 
 }
-
 
 //Show recipe details
 function showRecipe(recipeId) {
@@ -102,10 +132,10 @@ function showRecipe(recipeId) {
         expandedCard.appendChild(recipeIngredients);
         expandedCard.appendChild(recipeDirections);
   
-        // Append the expanded card to the recipe container
+        
         recipeContainer.appendChild(expandedCard);
   
-        // Disable scrolling of the page
+       
         
         document.body.style.overflow = 'hidden';
       })
@@ -120,11 +150,74 @@ function showRecipe(recipeId) {
     expandedCard.appendChild(closeButton);
   
     closeButton.addEventListener('click', () => {
-      // Remove the expanded card
+      
       expandedCard.remove();
   
-      // Enable scrolling of the page
+      
       document.body.style.overflow = 'auto';
     });
   }
   
+  // Function to toggle a favorite recipe 
+  function toggleFavorite(recipeCard) {
+    const favoriteButton = recipeCard.querySelector('#fav-btn');
+    const isFavorite = recipeCard.classList.toggle('favorite');
+  
+    if (isFavorite) {
+      favoriteButton.textContent = '★';
+      moveCardToFavorites(recipeCard);
+    } else {
+      favoriteButton.textContent = '✩';
+      removeCardFromFavorites(recipeCard);
+    }
+  }
+  
+  function moveCardToFavorites(recipeCard) {
+    const favoritesSection = document.getElementById('favorites-container');
+    favoritesSection.appendChild(recipeCard);
+  }
+  
+  function removeCardFromFavorites(recipeCard) {
+    const recipeContainer = document.getElementById('recipe-container');
+    recipeContainer.appendChild(recipeCard);
+  }
+  
+  // Hanlde add recipe form functionality 
+  const addRecipeForm = document.getElementById('add-recipe-form')
+  addRecipeForm.addEventListener('submit', handleAddRecipe);
+
+  function handleAddRecipe(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const image = document.getElementById('image').vale;
+    const type = document.getElementById('type');
+    const ingredients = document.getElementById('ingredients').value;
+    const directions = document.getElementById('directions').value;
+
+    const newRecipe = {
+      name,
+      image,
+      type,
+      ingredients: ingredients.split('\n'),
+      directions: directions.split('\n'),
+      likes: 0,
+    };
+
+    saveRecipe(newRecipe);
+
+    addRecipeForm.reset();
+  }
+
+  // Send new recipe object to server and display it in the DOM
+
+  function saveRecipe(recipe) {
+    const url = `http://localhost:3000/recipes`
+
+    fetch(url, {
+      method: 'POST',
+      headers
+    })
+
+
+  }
