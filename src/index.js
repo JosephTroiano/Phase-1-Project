@@ -11,17 +11,17 @@ function handleFilterChange() {
   const selectedType = filterSelect.value;
   const recipeCards = document.getElementsByClassName('recipe-card');
 
-  console.log('Selected Type:', selectedType);
+ 
 
   Array.from(recipeCards).forEach(card => {
       const recipeType = card.getAttribute('data-type');
-      console.log('Recipe Type:', recipeType);
+      
 
       if (selectedType === 'all' || recipeType === selectedType) {
-          console.log('Display:', card.id);
+          
           card.style.display = 'block';
       } else {
-          console.log('Hide:', card.id);
+          
           card.style.display = 'none';
       }
   });
@@ -182,7 +182,7 @@ function showRecipe(recipeId) {
     recipeContainer.appendChild(recipeCard);
   }
   
-  // Hanlde add recipe form functionality 
+  // Handle add recipe form functionality 
   const addRecipeForm = document.getElementById('add-recipe-form')
   addRecipeForm.addEventListener('submit', handleAddRecipe);
 
@@ -191,7 +191,7 @@ function showRecipe(recipeId) {
 
     const name = document.getElementById('name').value;
     const image = document.getElementById('image').vale;
-    const type = document.getElementById('type');
+    const type = document.getElementById('type').value;
     const ingredients = document.getElementById('ingredients').value;
     const directions = document.getElementById('directions').value;
 
@@ -212,12 +212,30 @@ function showRecipe(recipeId) {
   // Send new recipe object to server and display it in the DOM
 
   function saveRecipe(recipe) {
+
+    const typeSelect = document.getElementById('type');
+    const selectedType = typeSelect.value
+    recipe.type = selectedType
+
+
+
     const url = `http://localhost:3000/recipes`
 
     fetch(url, {
       method: 'POST',
-      headers
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(recipe),
     })
+    .then(response => response.json())
+    .then(savedRecipe => {
+      createRecipeCard(savedRecipe);
+    })
+    .catch(error => {
+      console.error(error)
+    });
 
 
   }
+
