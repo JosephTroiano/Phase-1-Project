@@ -190,7 +190,7 @@ function showRecipe(recipeId) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
-    const image = document.getElementById('image').vale;
+    const image = document.getElementById('image').value;
     const type = document.getElementById('type').value;
     const ingredients = document.getElementById('ingredients').value;
     const directions = document.getElementById('directions').value;
