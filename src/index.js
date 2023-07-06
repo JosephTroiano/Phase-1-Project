@@ -86,62 +86,63 @@ function createRecipeCard(recipe) {
 
 //Show recipe details
 function showRecipe(recipeId) {
-    const recipeCard = document.getElementById(recipeId);
-    const viewRecipeButton = recipeCard.querySelector('#details-btn');
-    const recipeContainer = document.getElementById('recipe-container');
-    
+  const recipeCard = document.getElementById(recipeId);
+  const viewRecipeButton = recipeCard.querySelector('#details-btn');
+  const recipeContainer = document.getElementById('recipe-container');
   
-    const url = `http://localhost:3000/recipes/${recipeId}`;
-  
-    // Create the expanded recipe card
-    const expandedCard = document.createElement('div');
-    expandedCard.classList.add('expanded-card');
-  
-    // Fetch recipe details and update the expanded card content
-    fetch(url)
-      .then(response => response.json())
-      .then(recipe => {
-        const recipeName = document.createElement('h2');
-        recipeName.textContent = recipe.name;
-  
-        const recipeImage = document.createElement('img');
-        recipeImage.src = recipe.image;
-  
-        const recipeType = document.createElement('h3');
-        recipeType.textContent = `Type: ${recipe.type}`;
-  
-        const recipeIngredients = document.createElement('h3');
-        recipeIngredients.textContent = 'Ingredients:';
-        recipe.ingredients.forEach(ingredient => {
-          const ingredientItem = document.createElement('li');
-          ingredientItem.textContent = ingredient;
-          recipeIngredients.appendChild(ingredientItem);
-        });
-  
-        const recipeDirections = document.createElement('h3');
-        recipeDirections.textContent = 'Directions:';
-        recipe.directions.forEach((direction, index) => {
-          const directionItem = document.createElement('p');
-          directionItem.textContent = `${index + 1}. ${direction}`;
-          recipeDirections.appendChild(directionItem);
-        });
-  
-        expandedCard.appendChild(recipeName);
-        expandedCard.appendChild(recipeImage);
-        expandedCard.appendChild(recipeType);
-        expandedCard.appendChild(recipeIngredients);
-        expandedCard.appendChild(recipeDirections);
-  
-        
-        recipeContainer.appendChild(expandedCard);
-  
-       
-        
-        document.body.style.overflow = 'hidden';
-      })
-      .catch(error => {
-        console.error(error);
+
+  const url = `http://localhost:3000/recipes/${recipeId}`;
+
+  // Create the expanded recipe card
+  const expandedCard = document.createElement('div');
+  expandedCard.classList.add('expanded-card');
+
+  // Fetch recipe details and update the expanded card content
+  fetch(url)
+    .then(response => response.json())
+    .then(recipe => {
+      const recipeName = document.createElement('h2');
+      recipeName.textContent = recipe.name;
+
+      const recipeImage = document.createElement('img');
+      recipeImage.src = recipe.image;
+
+      const recipeType = document.createElement('h3');
+      recipeType.textContent = `Type: ${recipe.type}`;
+
+      const recipeIngredients = document.createElement('h3');
+      recipeIngredients.textContent = 'Ingredients:';
+      recipe.ingredients.forEach(ingredient => {
+        const ingredientItem = document.createElement('li');
+        ingredientItem.textContent = ingredient;
+        recipeIngredients.appendChild(ingredientItem);
       });
+
+      const recipeDirections = document.createElement('h3');
+      recipeDirections.textContent = 'Directions:';
+      recipe.directions.forEach((direction, index) => {
+        const directionItem = document.createElement('p');
+        directionItem.textContent = `${index + 1}. ${direction}`;
+        recipeDirections.appendChild(directionItem);
+      });
+
+      expandedCard.appendChild(recipeName);
+      expandedCard.appendChild(recipeImage);
+      expandedCard.appendChild(recipeType);
+      expandedCard.appendChild(recipeIngredients);
+      expandedCard.appendChild(recipeDirections);
+
+      
+      recipeContainer.appendChild(expandedCard);
+
+     
+      
+      document.body.style.overflow = 'hidden';
+    })
+    .catch(error => {
+      console.error(error);
+    }); 
+
   
     // Close button event listener
     const closeButton = document.createElement('button');
@@ -156,7 +157,7 @@ function showRecipe(recipeId) {
       
       document.body.style.overflow = 'auto';
     });
-  }
+  
   
   // Function to toggle a favorite recipe 
   function toggleFavorite(recipeCard) {
@@ -238,4 +239,4 @@ function showRecipe(recipeId) {
 
 
   }
-
+}
