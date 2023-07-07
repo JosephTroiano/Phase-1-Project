@@ -273,7 +273,7 @@ function showRecipe(recipeId) {
   }
 // Edit recipe 
 function editRecipeForm(recipe) {
-  // Create the overlay element
+  
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
 
@@ -287,7 +287,7 @@ function editRecipeForm(recipe) {
     overlay.remove();
   });
 
-  // Create the edit form
+ 
   const editForm = document.createElement('form');
   editForm.id = 'edit-recipe-form';
   editForm.addEventListener('submit', (event) => {
@@ -296,8 +296,7 @@ function editRecipeForm(recipe) {
     overlay.remove();
   });
 
-  // Create form fields for editing recipe details
-  // Name
+  
   const nameLabel = document.createElement('label');
   nameLabel.textContent = 'Name';
   const nameInput = document.createElement('input');
@@ -306,7 +305,7 @@ function editRecipeForm(recipe) {
   nameInput.name = 'name';
   nameLabel.appendChild(nameInput);
 
-  // Image URL
+  
   const imageLabel = document.createElement('label');
   imageLabel.textContent = 'Image URL';
   const imageInput = document.createElement('input');
@@ -315,7 +314,7 @@ function editRecipeForm(recipe) {
   imageInput.name = 'image';
   imageLabel.appendChild(imageInput);
 
-  // Type
+  
   const typeLabel = document.createElement('label');
   typeLabel.textContent = 'Type';
   const typeInput = document.createElement('input');
@@ -324,7 +323,7 @@ function editRecipeForm(recipe) {
   typeInput.name = 'type';
   typeLabel.appendChild(typeInput);
 
-  // Ingredients
+  
   const ingredientsLabel = document.createElement('label');
   ingredientsLabel.textContent = 'Ingredients';
   const ingredientsTextarea = document.createElement('textarea');
@@ -332,7 +331,7 @@ function editRecipeForm(recipe) {
   ingredientsTextarea.name = 'ingredients';
   ingredientsLabel.appendChild(ingredientsTextarea);
 
-  // Directions
+  
   const directionsLabel = document.createElement('label');
   directionsLabel.textContent = 'Directions';
   const directionsTextarea = document.createElement('textarea');
@@ -340,12 +339,12 @@ function editRecipeForm(recipe) {
   directionsTextarea.name = 'directions';
   directionsLabel.appendChild(directionsTextarea);
 
-  // Submit button
+
   const submitButton = document.createElement('button');
   submitButton.type = 'submit';
   submitButton.textContent = 'Save Changes';
 
-  // Append form fields to the edit form
+  
   editForm.appendChild(closeButton);
   editForm.appendChild(nameLabel);
   editForm.appendChild(imageLabel);
@@ -356,10 +355,9 @@ function editRecipeForm(recipe) {
 
   editFormContainer.appendChild(editForm)
 
-  // Append the edit form to the overlay
+  
   overlay.appendChild(editForm);
 
-  // Append the overlay to the document body
   document.body.appendChild(overlay);
 }
 // Send edited recipe to server and update the card in the DOM
@@ -378,7 +376,7 @@ function saveEditedRecipe(recipeId) {
     directions: directionsTextarea.value.split('\n'),
   };
 
-  // Update the recipe card with the edited details
+  
   const recipeCard = document.getElementById(recipeId);
   const recipeName = recipeCard.querySelector('h2');
   const recipeImage = recipeCard.querySelector('img');
@@ -390,7 +388,7 @@ function saveEditedRecipe(recipeId) {
   recipeCard.setAttribute('data-type', editedRecipe.type);
   recipeCard.dataset.ingredients = editedRecipe.ingredients.join(', ');
 
-  // Send a PATCH request to the server to update the recipe
+  
   const url = `http://localhost:3000/recipes/${recipeId}`;
 
   fetch(url, {
@@ -402,7 +400,7 @@ function saveEditedRecipe(recipeId) {
   })
     .then(response => response.json())
     .then(updatedRecipe => {
-      // Handle any further actions with the updated recipe, if needed
+      
     })
     .catch(error => {
       console.error(error);
