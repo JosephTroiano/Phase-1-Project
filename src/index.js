@@ -303,6 +303,7 @@ function editRecipeForm(recipe) {
   const nameInput = document.createElement('input');
   nameInput.type = 'text';
   nameInput.value = recipe.name;
+  nameInput.name = 'name';
   nameLabel.appendChild(nameInput);
 
   // Image URL
@@ -311,6 +312,7 @@ function editRecipeForm(recipe) {
   const imageInput = document.createElement('input');
   imageInput.type = 'text';
   imageInput.value = recipe.image;
+  imageInput.name = 'image';
   imageLabel.appendChild(imageInput);
 
   // Type
@@ -319,6 +321,7 @@ function editRecipeForm(recipe) {
   const typeInput = document.createElement('input');
   typeInput.type = 'text';
   typeInput.value = recipe.type;
+  typeInput.name = 'type';
   typeLabel.appendChild(typeInput);
 
   // Ingredients
@@ -326,6 +329,7 @@ function editRecipeForm(recipe) {
   ingredientsLabel.textContent = 'Ingredients';
   const ingredientsTextarea = document.createElement('textarea');
   ingredientsTextarea.value = recipe.ingredients.join('\n');
+  ingredientsTextarea.name = 'ingredients';
   ingredientsLabel.appendChild(ingredientsTextarea);
 
   // Directions
@@ -333,6 +337,7 @@ function editRecipeForm(recipe) {
   directionsLabel.textContent = 'Directions';
   const directionsTextarea = document.createElement('textarea');
   directionsTextarea.value = recipe.directions.join('\n');
+  directionsTextarea.name = 'directions';
   directionsLabel.appendChild(directionsTextarea);
 
   // Submit button
