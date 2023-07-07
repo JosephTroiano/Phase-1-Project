@@ -3,7 +3,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const filterSeletct = document.getElementById('filter-select')
   filterSeletct.addEventListener('change', handleFilterChange);
+
+  const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
+  searchButton.addEventListener('click', () => {
+    const searchQuery = searchInput.value.toLowerCase();
+    searchRecipes(searchQuery);
+  });
+
 });
+
+// Search for recipes by ingredients
+function searchRecipes(query) {
+  const recipeCards = document.getElementsByClassName('recipe-card');
+
+  for (let i = 0; i < recipeCards.length; i++) {
+    const recipeCard = recipeCards[i];
+    const ingredients = recipeCard.dataset.ingredients.toLowerCase();
+
+    if (ingredients.includes(query)) {
+      recipeCard.style.display = 'block';
+    } else {
+      recipeCard.style.display = 'none';
+    }
+  }
+}
 
 // Function to handle filter change
 function handleFilterChange() {
@@ -27,9 +51,6 @@ function handleFilterChange() {
   });
 }
 
-
-
-
 // Fetch recipes from server
 function fetchRecipes() {
     const url = `http://localhost:3000/recipes`
@@ -49,10 +70,13 @@ function fetchRecipes() {
 function createRecipeCard(recipe) {
     const recipeContainer = document.getElementById('recipe-container');
 
+    const ingredientsString = recipe.ingredients.join(', ').toLowerCase();
+
     const recipeCard = document.createElement('div');
     recipeCard.classList.add('recipe-card');
     recipeCard.id = recipe.id;
     recipeCard.setAttribute('data-type', recipe.type);
+    recipeCard.dataset.ingredients = ingredientsString;
 
     const recipeName = document.createElement('h2');
     recipeName.textContent = recipe.name;
@@ -66,6 +90,13 @@ function createRecipeCard(recipe) {
     viewRecipe.addEventListener('click', () => {
         showRecipe(recipe.id);
     });
+
+    const editRecipe = document.createElement('button');
+    editRecipe.id = 'edit-btn'
+    editRecipe.textContent = 'Edit Recipe';
+    editRecipe.addEventListener('click', () => {
+      editRecipeForm(recipe)
+    });
     
     const favoriteButton = document.createElement('p');
     favoriteButton.id = 'fav-btn';
@@ -77,6 +108,7 @@ function createRecipeCard(recipe) {
     recipeCard.appendChild(recipeName);
     recipeCard.appendChild(recipeImage);
     recipeCard.appendChild(viewRecipe);
+    recipeCard.appendChild(editRecipe);
     
     recipeCard.appendChild(favoriteButton);
 
@@ -158,7 +190,7 @@ function showRecipe(recipeId) {
       document.body.style.overflow = 'auto';
     });
   
-  
+  }  
   // Function to toggle a favorite recipe 
   function toggleFavorite(recipeCard) {
     const favoriteButton = recipeCard.querySelector('#fav-btn');
@@ -239,4 +271,135 @@ function showRecipe(recipeId) {
 
 
   }
+// Edit recipe 
+function editRecipeForm(recipe) {
+  // Create the overlay element
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+
+  const editFormContainer = document.createElement('div');
+  editFormContainer.classList.add('edit-form-container');
+
+  const closeButton = document.createElement('button');
+  closeButton.id = 'close-btn';
+  closeButton.innerHTML = '&times;';
+  closeButton.addEventListener('click', () => {
+    overlay.remove();
+  });
+
+  // Create the edit form
+  const editForm = document.createElement('form');
+  editForm.id = 'edit-recipe-form';
+  editForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    saveEditedRecipe(recipe.id);
+    overlay.remove();
+  });
+
+  // Create form fields for editing recipe details
+  // Name
+  const nameLabel = document.createElement('label');
+  nameLabel.textContent = 'Name';
+  const nameInput = document.createElement('input');
+  nameInput.type = 'text';
+  nameInput.value = recipe.name;
+  nameLabel.appendChild(nameInput);
+
+  // Image URL
+  const imageLabel = document.createElement('label');
+  imageLabel.textContent = 'Image URL';
+  const imageInput = document.createElement('input');
+  imageInput.type = 'text';
+  imageInput.value = recipe.image;
+  imageLabel.appendChild(imageInput);
+
+  // Type
+  const typeLabel = document.createElement('label');
+  typeLabel.textContent = 'Type';
+  const typeInput = document.createElement('input');
+  typeInput.type = 'text';
+  typeInput.value = recipe.type;
+  typeLabel.appendChild(typeInput);
+
+  // Ingredients
+  const ingredientsLabel = document.createElement('label');
+  ingredientsLabel.textContent = 'Ingredients';
+  const ingredientsTextarea = document.createElement('textarea');
+  ingredientsTextarea.value = recipe.ingredients.join('\n');
+  ingredientsLabel.appendChild(ingredientsTextarea);
+
+  // Directions
+  const directionsLabel = document.createElement('label');
+  directionsLabel.textContent = 'Directions';
+  const directionsTextarea = document.createElement('textarea');
+  directionsTextarea.value = recipe.directions.join('\n');
+  directionsLabel.appendChild(directionsTextarea);
+
+  // Submit button
+  const submitButton = document.createElement('button');
+  submitButton.type = 'submit';
+  submitButton.textContent = 'Save Changes';
+
+  // Append form fields to the edit form
+  editForm.appendChild(closeButton);
+  editForm.appendChild(nameLabel);
+  editForm.appendChild(imageLabel);
+  editForm.appendChild(typeLabel);
+  editForm.appendChild(ingredientsLabel);
+  editForm.appendChild(directionsLabel);
+  editForm.appendChild(submitButton);
+
+  editFormContainer.appendChild(editForm)
+
+  // Append the edit form to the overlay
+  overlay.appendChild(editForm);
+
+  // Append the overlay to the document body
+  document.body.appendChild(overlay);
+}
+// Send edited recipe to server and update the card in the DOM
+function saveEditedRecipe(recipeId) {
+  const nameInput = document.querySelector('#edit-recipe-form input[name="name"]');
+  const imageInput = document.querySelector('#edit-recipe-form input[name="image"]');
+  const typeInput = document.querySelector('#edit-recipe-form input[name="type"]');
+  const ingredientsTextarea = document.querySelector('#edit-recipe-form textarea[name="ingredients"]');
+  const directionsTextarea = document.querySelector('#edit-recipe-form textarea[name="directions"]');
+
+  const editedRecipe = {
+    name: nameInput.value,
+    image: imageInput.value,
+    type: typeInput.value,
+    ingredients: ingredientsTextarea.value.split('\n'),
+    directions: directionsTextarea.value.split('\n'),
+  };
+
+  // Update the recipe card with the edited details
+  const recipeCard = document.getElementById(recipeId);
+  const recipeName = recipeCard.querySelector('h2');
+  const recipeImage = recipeCard.querySelector('img');
+  const recipeType = recipeCard.getAttribute('data-type');
+  const recipeIngredients = recipeCard.dataset.ingredients;
+
+  recipeName.textContent = editedRecipe.name;
+  recipeImage.src = editedRecipe.image;
+  recipeCard.setAttribute('data-type', editedRecipe.type);
+  recipeCard.dataset.ingredients = editedRecipe.ingredients.join(', ');
+
+  // Send a PATCH request to the server to update the recipe
+  const url = `http://localhost:3000/recipes/${recipeId}`;
+
+  fetch(url, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(editedRecipe),
+  })
+    .then(response => response.json())
+    .then(updatedRecipe => {
+      // Handle any further actions with the updated recipe, if needed
+    })
+    .catch(error => {
+      console.error(error);
+    });
 }
