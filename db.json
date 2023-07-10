@@ -2,180 +2,279 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Ham and Swiss Omelet",
-      "image": "./images/Ham-and-Swiss.jpeg",
+      "name": "Bacon, Egg, and Cheese Sandwich",
+      "image": "./images/BaconEggAndCheese.jpeg",
       "type": "breakfast",
       "ingredients": [
-        "1 tablespoon butter",
-        "3 eggs",
-        "3 tablespoons water",
-        "1/8 teaspoon salt",
-        "1/8 teaspoon pepper",
-        "1/2 cup cubed fully cooked ham",
-        "1/4 cup shredded Swiss cheese"
+        "2 slices bacon",
+        "4 teaspoons butter, divided",
+        "3 large eggs",
+        "1 pinch freshly ground black pepper",
+        "1 pinch salt",
+        "1/4 cup shredded Cheddar cheese",
+        "4 slices bread"
       ],
       "directions": [
-        "In a small nonstick skillet, melt butter over medium-high heat. Whisk the eggs, water, salt and pepper. Add egg mixture to skillet (mixture should set immediately at edges).",
-        "As eggs set, push cooked edges toward the center, letting uncooked portion flow underneath. When the eggs are set, place ham on one side and sprinkle with cheese; fold other side over filling. Slide omelet onto a plate."
-      ],
-      "likes": 0
+        "Place bacon in a nonstick skillet and cook over medium-high heat, turning occasionally, until evenly browned, about 7 minutes. Drain bacon slices on paper towels. Remove bacon to a drip line tray. Drain off bacon grease for another use. Wash out the skillet.",
+        "Whisk eggs with salt and pepper in a small bowl until frothy.",
+        "Melt 2 teaspoons butter in the nonstick skillet over medium heat. Pour in beaten eggs; let cook for 30 seconds. Lift the edges of the omelet so that the uncooked egg runs under the cooked edges and comes into contact with the hot skillet. Shake and tilt the skillet to move the uncooked egg. Repeat until the top is set, about 3 minutes; reduce heat to low.", 
+        "Meanwhile, chop bacon roughly; sprinkle over omelet. Sprinkle with cheese; allow cheese to melt, 1 to 2 minutes.", 
+        "Meanwhile, butter 2 slices of bread with 1/2 teaspoon butter each. Lay bread, buttered side up, side-by-side over omelet, leaving about 1 inch between slices. The melted cheese will help the bread adhere.", 
+        "Run a spatula around the entire omelet to loosen from the skillet. Carefully turn the omelet over so buttered side of bread is in contact with the skillet. Cook until bread is toasted and golden, about 2 minutes.", 
+        "Using the spatula, fold in edges of omelet to align with sides of the bread. Cut omelet along center with the spatula to form 2 sandwiches. Butter 2 remaining bread slices with remaining butter; place butter side up on each sandwich. Turn sandwiches; cook until golden, about 2 minutes more. Serve and enjoy immediately!"
+      ]
     },
     {
       "id": 2,
-      "name": "Banana Oatmeal Pankcakes",
-      "image": "./images/Banana-Oatmeal-Pancakes.jpeg",
+      "name": "Air Fryer Spinach, Pepper, and Feta Egg Bites",
+      "image": "./images/AirFryerSpinachPepperAndFetaEggBites.jpeg",
       "type": "breakfast",
       "ingredients": [
-        "2 cups complete whole wheat pancake mix",
-        "1 large firm banana, finely chopped",
-        "1/2 cup old-fashioned oats",
-        "1/4 cup chopped walnuts"
+        "5 large eggs, lightly beaten",
+        "2 tablespoons milk",
+        "1/4 teaspoon salt",
+        "1/8 teaspoon freshly ground black pepper",
+        "1/2 cup chopped fresh spinach", 
+        "1/2 cup chopped orange bell pepper", 
+        "1/4 cup crumbled feta cheese, plus more for garnish",
+        "1 tablespoon sliced green onion, plus more for garnish"
       ],
       "directions": [
-        "Prepare pancake batter according to package directions.",
-        "Stir in the banana, oats and walnuts.",
-        "Pour batter by 1/4 cupfuls onto a hot griddle coated with cooking spray; turn when bubbles form on top.",
-        "Cook until the second side is golden brown."
-      ],
-      "likes": 0
+        "Coat 4 (6-ounces) ramekins with cooking spray.",
+        "Stir together eggs, milk, salt, and black pepper in a bowl. In another bowl, stir together spinach, bell pepper, feta, and green onion; spoon into prepared ramekins. Evenly pour egg mixture over filling in ramekins.",
+        "Preheat air fryer to 340 degrees F (160 degrees C). Arrange ramekins in air fryer basket.",
+        "Cook for about 6 minutes. Gently stir partially cooked egg bites. Cook until eggs are set, 12 to 14 minutes more. Let egg bites stand about 3 minutes before serving. Garnish with additional feta and green onion."
+      ]
     },
     {
       "id": 3,
-      "name": "Sweet and Spicy Turkey Sandwich",
-      "image": "./images/Sweet-and-Spicy-Turkey-Sandwich.jpeg",
-      "type": "lunch",
+      "name": "Tres Leches Pancakes",
+      "image": "./images/TresLechesPancakes.jpeg",
+      "type": "breakfast",
       "ingredients": [
-        "2 slices (1/2 inch thick) hearty country bread",
-        "4 slices roasted turkey breast",
-        "1 slice pepperjack cheese",
-        "2 teaspoons butter",
-        "4 teaspoons strawberry preserves"
+        "2/3 cup sweetened condensed milk",
+        "1/2 cup evaporated milk",
+        "1/3 cup half and half",
+        "1 (15.25 oz) box French vanilla cake mix (such as Betty Crocker™ Super Moist French Vanilla Cake Mix)",
+        "1 1/4 cups almond milk",
+        "3 large eggs, lightly beaten",
+        "4 tablespoons vegetable oil, divided",
+        "1/2 cup whipped cream, or as needed (optional)",
+        "1/4 teaspoon ground cinnamon, or as needed (optional)"
       ],
       "directions": [
-        "Heat a small skillet over medium heat.",
-        "Butter one side of each of the bread slices with one teaspoon butter.",
-        "Place one slice, butter side down, in the skillet.",
-        "Top with the turkey and cheese slices.",
-        "Place the second slice of bread on top, butter side up.",
-        "When the first side of the sandwich is golden brown, turn and brown the other side, 3 to 5 minutes per side, or until the cheese begins to melt.",
-        "Remove sandwich to a plate and top with strawberry preserves, or serve the preserves on the side."
-      ],
-      "likes": 0
+        "Combine sweetened condensed milk, evaporated milk, and half and half in a small saucepan and set over medium heat. Bring to a boil, stirring constantly for 3 to 4 minutes. Remove from heat and let cool. This is a sauce, not a syrup, so consistency will be on the thinner side.",
+        "Add cake mix, almond milk, eggs, and 3 tablespoons vegetable oil to a large bowl, and beat vigorously by hand for 2 minutes.",
+        "Heat a large skillet or griddle over medium heat, and lightly coat with remaining vegetable oil. Add 1/4 cup of the batter for each pancake. Cook until edges begin to puff up, small bubbles appear, pop, and leave small holes, 2 to 3 minutes. Flip pancakes and cook until golden brown on the other side, about 2 minutes more.",
+        "Serve pancakes warm with a drizzle of the tres leches sauce, a dollop of whipped cream, and sprinkle of cinnamon."
+      ]
     },
     {
       "id": 4,
-      "name": "Mexi-Chicken Avocado Cups",
-      "image": "./images/Mexi-Chicken-Avocado-Cups.jpeg",
-      "type": "dinner",
+      "name": "Arugula Salad with Stone Fruit",
+      "image": "./images/ArugulaSaladWithStoneFruit.jpeg",
+      "type": "lunch",
       "ingredients": [
-        "3 (6 ounce) cans canned chicken, drained",
-        "1 tablespoon cilantro, finely chopped",
-        "1/2 teaspoon chili powder, or more to taste",
-        "3 avocados, halved lengthwise and pitted",
-        "1 teaspoon lime juice, or to taste"
+        "2 tablespoons extra-virgin olive oil",
+        "2 tablespoons red wine vinegar or rosé vinegar",
+        "3/4 teaspoon salt",
+        "1/2 teaspoon black pepper",
+        "1 1/2 cups red cherry tomatoes, halved",
+        "1 1/2 cups yellow cherry tomatoes, halved",
+        "1 (5-ounce package) arugula",
+        "3/4 cup fresh basil leaves",
+        "2 nectarines, sliced",
+        "1 large white peach, sliced",
+        "1 cup Rainier or other yellow-flesh cherries, pitted and halved",
+        "1/2 teaspoon flaky sea salt"
       ],
       "directions": [
-        "Stir chicken, cilantro, and chili powder together in a bowl.",
-        "Arrange avocado halves on serving dish and brush with lime juice.",
-        "Spoon chicken mixture into avocado halves."
-      ],
-      "likes": 0
+        "Whisk together olive oil, vinegar, salt, and pepper in a small bowl for the dressing.",
+        "Arrange tomatoes, arugula, basil, nectarines, and peach slices on a large platter. Drizzle with half the dressing. Top with cherries, sea salt, and remaining dressing. Serve immediately."
+      ]
     },
     {
       "id": 5,
-      "name": "Homemade Chicken Potpie",
-      "image": "./images/Homemade-Chicken-Potpie.jpeg",
-      "type": "dinner",
+      "name": "Croque Madame",
+      "image": "./images/CroqueMadame.jpeg",
+      "type": "lunch",
       "ingredients": [
-        "2 tablespoons canola oil",
-        "1 medium onion, chopped",
-        "1/2 cup all-purpose flour",
-        "1 teaspoon poultry seasoning",
-        "1 can (14-1/2 ounces) chicken broth",
-        "3/4 cup 2% milk",
-        "3 cups cubed cooked chicken",
-        "2 cups frozen mixed vegetables (about 10 ounces), thawed",
-        "1 sheet refrigerated pie crust"
+        "4 tablespoons salted butter, softened, divided",
+        "1 ½ tablespoons all-purpose flour",
+        "1 cup milk",
+        "2 ounces shredded Gruyère cheese",
+        "¼ teaspoon salt, or to taste",
+        "¼ teaspoon ground black pepper, or to taste",
+        "⅛ teaspoon ground nutmeg",
+        "4 slices white bread, lightly toasted",
+        "2 teaspoons Dijon mustard",
+        "2 thin slices Black Forest ham",
+        "2 large eggs",
+        "1 tablespoon water",
+        "1 teaspoon chopped fresh dill, or to taste (Optional)"
       ],
       "directions": [
-        "Preheat oven to 450°. In a large saucepan, heat oil over medium-high heat.",
-        "Add onion; cook and stir until tender.",
-        "Stir in flour and poultry seasoning until blended; gradually whisk in broth and milk.",
-        "Bring to a boil, stirring constantly; cook and stir 2-3 minutes or until thickened.",
-        "Stir in chicken and vegetables.",
-        "Transfer to a greased 9-in. deep-dish pie plate; place crust over filling.",
-        "Trim, seal and flute edges. Cut slits in crust.",
-        "Bake 15-20 minutes or until crust is golden brown and filling is bubbly."
-      ],
-      "likes": 0
+        "Set an oven rack about 6 inches from the heat source and preheat the oven's broiler.",
+        "Melt 1 1/2 tablespoons butter in a saucepan over medium-low heat. Whisk in flour and stir until slightly brown, about 3 minutes. Whisk in milk; bring to a boil, stirring constantly. Once boiling, reduce heat immediately and simmer for 5 minutes. Add 1/2 of the Gruyère cheese, salt, pepper, and nutmeg; heat until cheese is melted, about 2 minutes. Remove from the heat and set aside.",
+        "Spread about 1 teaspoon butter on 2 pieces of bread. Spread 1 tablespoon cheese sauce on top and layer each with a ham slice. Spread 1 teaspoon butter on the remaining 2 pieces of bread, then spread Dijon mustard on top and sprinkle with remaining Gruyère. Transfer all 4 pieces to a baking sheet.",
+        "Broil in the preheated oven until cheese is almost melted, 2 to 3 minutes. Remove from the oven, place toast slices together to make 2 sandwiches and pour remaining cheese sauce on top of each sandwich. Return to the broiler until sauce starts to brown, about 2 minutes.",
+        "While the sandwiches are broiling, heat remaining butter in a nonstick skillet over medium-high heat. Crack 2 eggs into the skillet, keeping them completely separate from one another. Season with salt and pepper. Add water, cover, and baste until whites are set but yolks are still runny, about 2 minutes.",
+        "Top each sandwich with an egg and sprinkle with dill, if using. Serve immediately."
+      ]
     },
     {
       "id": 6,
-      "name": "Salsa Steak Garlic Toasts",
-      "image": "./images/Salsa-Steak-Garlic-Toasts.jpeg",
-      "type": "dinner",
+      "name": "Cream of Mashed Potato Soup",
+      "image": "./images/CreamOfMashedPotatoSoup.jpeg",
+      "type": "lunch",
       "ingredients": [
-        "4 slices frozen garlic Texas toast",
-        "1 tablespoon olive oil",
-        "1 beef top sirloin steak (1 pound), thinly sliced",
-        "1-1/2 cups salsa",
-        "Sour cream and chopped fresh cilantro"
+        "2 cups milk, or as needed",
+        "4 cups leftover mashed potatoes",
+        "2 cups cubed fully cooked ham",
+        "salt and ground black pepper to taste",
+        "½ cup shredded Cheddar cheese, or to taste"
       ],
       "directions": [
-        "Prepare garlic toast according to package directions.",
-        "Meanwhile, in a large skillet, heat oil over medium heat.",
-        "Saute steak until no longer pink, 3-5 minutes; drain.",
-        "Stir in salsa; cook and stir until heated through.",
-        "Serve over toast. Top with sour cream and cilantro."
-      ],
-      "likes": 0
+        "Heat milk in a large saucepan over medium heat. Stir mashed potatoes into the warm milk until the mixture is smooth, adding more milk as needed to make it smooth; add ham and stir. Cook the mixture until the ham cubes are hot in the middle, 5 to 10 minutes; season with salt and pepper and top with Cheddar cheese."
+      ]
     },
     {
       "id": 7,
-      "name": "Chocolate Chip Cookie Dough Dip",
-      "image": "./images/Chocolate-Chip-Cookie-Dough-Dip.jpeg",
-      "type": "dessert",
+      "name": "Crockpot Italian Chicken",
+      "image": "./images/CrockpotItalianChicken.jpeg",
+      "type": "dinner",
       "ingredients": [
-        "½ cup unsalted butter",
-        "8 ounces cream cheese",
-        "¼ cup powdered sugar",
-        "¼ cup brown sugar",
-        "1 teaspoon pure vanilla extract",
-        "¼ teaspoon kosher salt",
-        "1 cup semisweet mini chocolate chips"
+        "1 (16 ounce) bottle Italian dressing (such as Olive Garden℠ Signature Italian Dressing)",
+        "1/4 cup grated Parmesan cheese",
+        "4 boneless skinless chicken breasts"
       ],
       "directions": [
-        "In the bowl of a stand mixer fitted with the paddle attachment, beat the butter, cream cheese, sugars, vanilla, and salt on low until smooth, about 2-4 minutes.",
-        "Fold in the mini chocolate chips until evenly distributed in the dip.",
-        "Serve with dippers like pretzels, green apples or chocolate graham crackers, waffle cones, or get really wild and try a sweet and salty combo with corn chip dippers!"
-      ],
-      "likes": 0
+        "Stir Italian dressing and Parmesan cheese together in a bowl.",
+        "Place chicken in a slow cooker, and pour dressing mixture over chicken. Cover and cook on Low until chicken is tender, no longer pink in the center, and the juices run clear, about 8 hours."
+      ]
     },
     {
       "id": 8,
-      "name": "Pineapple Bread Pudding",
-      "image": "./images/Pineapple-Bread-Pudding.jpeg",
-      "type": "dessert",
+      "name": "Crispy Rosemary Chicken and Fries",
+      "image": "./images/CrispyRosemaryChickenAndFries.jpeg",
+      "type": "dinner",
       "ingredients": [
-        "4 tablespoons unsalted butter",
-        "1½ cups granulated sugar",
-        "3 large eggs",
-        "1 cup milk",
-        "20 ounces pineapple tidbits",
-        "4 cups stale bread cubes"
+        "8 chicken thighs",
+        "6 small red potatoes, quartered",
+        "½ cup extra-virgin olive oil, or as needed",
+        "1 tablespoon chopped fresh rosemary",
+        "1 ½ teaspoons chopped fresh oregano",
+        "1 ½ teaspoons garlic powder",
+        "salt and pepper to taste"
       ],
       "directions": [
-        "Preheat oven to 325°F.",
-        "Spray a large casserole dish (9×13 inches or 2.5 quarts) with nonstick spray and set aside.",
-        "In a large mixing bowl, stir the melted butter and sugar together. Stir in the beaten eggs and milk.",
-        "Add in the pineapple and remaining juice and stir to combine.",
-        "Fold in the bread cubes slowly, being careful not to crush the bread.",
-        "Pour the mixture into the prepared casserole dish.",
-        "Bake for 1 hour, or until the center is set.",
-        "Top with brown sugar or cinnamon sugar (optional).",
-        "Serve as a side dish or dessert."
-      ],
-      "likes": 0
-    }
+        "Preheat the oven to 375 degrees F (190 degrees C).",
+        "Place chicken and potatoes into a large bowl. Pour olive oil over them, and stir to coat. Scatter the chicken and potato pieces in a large baking dish, or cookie sheet with sides. Sprinkle with rosemary, oregano, garlic powder, salt and pepper.",
+        "Bake for 1 hour in the preheated oven, uncovered. Baste during the last 15 minutes for extra crispness."
+      ]
+      },
+      {
+        "id": 9,
+        "name": "Slow Cooker Baby Back Ribs",
+        "image": "./images/SlowCookerBabyBackRibs.jpeg",
+        "type": "dinner",
+        "ingredients": [
+          "3 pounds baby back ribs, trimmed",
+          "salt and ground black pepper, to taste",
+          "½ cup water",
+          "½ onion, sliced",
+          "1 clove garlic, minced",
+          "1 (18 ounce) bottle barbeque sauce"
+        ],
+        "directions": [
+          "Season ribs with salt and pepper.",
+          "Pour 1/2 cup water into the slow cooker, then add ribs. Scatter onion and garlic over top. Cover and cook on Low for 8 hours or High for 4 hours.",
+          "When the ribs are almost finished, preheat the oven to 375 degrees F (190 degrees C).",
+          "Transfer ribs from the slow cooker to a baking sheet; discard onion and garlic. Coat ribs with barbeque sauce.",
+          "Bake ribs in the preheated oven until sauce caramelizes and sticks to meat, 10 to 15 minutes."
+        ]
+      },
+      {
+        "id": 10,
+        "name": "3 Ingredient Mango Ice Cream",
+        "image": "./images/3IngredientMangoIceCream.jpeg",
+        "type": "dessert",
+        "ingredients": [
+          "1 1/2 cupsmango puree (from 4 to 5 mangos",
+          "1 cup heavy cream",
+          "1/2 cup white sugar"
+        ],
+        "directions": [
+          "Peel and dice mangoes. Place in a blender and blend until pureed; measure out 1 1/2 cups puree; set aside. Refrigerate remaining puree for another use.",
+          "Whip heavy cream and sugar with an electric mixer on high speed until soft peaks form. Reduce the mixer speed to low and mix in mango puree.",
+          "Pour into Ninja® CREAMi™ containers or into a freezer-safe bowl. Freeze for 24 hours if using Ninja® CREAMi™ or for 8 hours to overnight if freezing in a container.",
+          "Following manufacturers instructions, insert the pint container into the outer bowl of Ninja® CREAMi™. Push “Ice Cream” button. If freezing in a container, remove from the freezer and let sit for 8 to 10 minutes or until soft enough to scoop."
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Brownie Pie",
+        "image": "./images/BrowniePie.jpeg",
+        "type": "dessert",
+        "ingredients": [
+          "1 ¼ cups all-purpose flour, plus more for rolling",
+          "1 tablespoon granulated sugar",
+          "½ teaspoon kosher salt",
+          "½ cup cold unsalted butter, cut into 1/2-inch pieces",
+          "3 tablespoons ice water, or more as needed",
+          "10 tablespoons unsalted butter, melted and cooled",
+          "¾ cup granulated sugar",
+          "2 large eggs, at room temperature",
+          "1 large egg yolk, at room temperature",
+          "2 tablespoons canola oil",
+          "1 teaspoon vanilla extract",
+          "¾ cup unsweetened cocoa powder",
+          "½ cup all-purpose flour",
+          "2 teaspoons instant espresso granules",
+          "½ teaspoon kosher salt",
+          "½ cup chopped walnuts or hazelnuts",
+          "½ cup semisweet chocolate chips, divided"
+        ],
+        "directions": [
+          "For the crust, combine flour, sugar, and teaspoon salt in a food processor and pulse about 3 times until combined. Scatter cold butter over flour mixture in food processor. Pulse about 6 times until butter resembles pea-sized pieces. Drizzle 3 tablespoons water over butter mixture. Pulse about 6 times until couscous-like beads of dough form, adding 1 more tablespoon ice water if needed.",
+          "Transfer dough to a work surface, and press into a single mass. Shape and flatten dough into a disk.",
+          "Wrap in plastic wrap, and chill for at least 1 hour or up to 2 days.",
+          "Unwrap dough and place on a lightly floured work surface. Let dough sit at room temperature for 10 minutes to soften. Dust top of dough with flour. Using a lightly floured rolling pin, roll disk into a 12-inch circle.",
+          "Place in a 9-inch pie plate, pressing into bottom and up sides of pie plate. Fold edges under, and crimp as desired. Cover with plastic wrap, and freeze for 30 minutes.",
+          "Preheat the oven to 350 degrees F (175 degrees C). Place parchment paper over dough in pie plate; fill with pie weights or dried beans.",
+          "Bake in the preheated oven until crust is starting to set, about 15 minutes.",
+          "Carefully remove pie plate from oven and take off parchment paper and pie weights. Return pie plate to oven, and bake until pie crust is light golden brown, 8 to 12 minutes.",
+          "Transfer to a wire rack; let cool to room temperature, about 20 minutes.",
+          "Whisk together melted butter, sugar, eggs, egg yolk, canola oil, and vanilla extract in a bowl until blended and smooth. Whisk in cocoa, flour, instant espresso, and salt just until combined. Stir in nuts and 1/4 cup chocolate chips.",
+          "Scrape mixture into cooled crust, and smooth top with a small offset spatula. Sprinkle remaining 1/4 cup chocolate chips on top of the pie.",
+          "Bake in the preheated oven until a toothpick inserted in the center comes out clean, 30 to 35 minutes, covering the crust with aluminum foil if it gets too dark. Let cool 20 minutes before serving."
+        ]
+      },
+      {
+        "id": 12,
+        "name": "No-Bake Cheesecake I",
+        "image": "./images/NoBakeCheescakeI.jpeg",
+        "type": "dessert",
+        "ingredients": [
+          "¾ cup finely ground graham cracker crumbs",
+          "¾ cup pecan sandies cookies",
+          "3 tablespoons butter",
+          "3 tablespoons white sugar",
+          "8 ounces cream cheese",
+          "⅓ cup white sugar",
+          "2 tablespoons lemon juice",
+          "½ cup heavy whipping cream, whipped",
+          "½ cup sliced fresh strawberries (Optional)"
+        ],
+        "directions": [
+          "In a bowl, mix together crushed cookies and graham crackers with melted butter and the 3 tablespoons sugar.",
+          "Press into a 7 inch springform pan. Place in refrigerator until ready for use.",
+          "In another bowl, beat cream cheese, 1/3 cup of sugar and lemon juice.",
+          "Whip cream, and fold into cream cheese mixture.",
+          "Spread into pan.",
+          "Top with sliced strawberries (optional). Freeze for 1 hour, covered with foil.",
+          "Place in refrigerator 30 minutes before serving."
+        ]
+      }
   ]
 }
