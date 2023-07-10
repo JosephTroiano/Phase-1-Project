@@ -17,10 +17,10 @@
       "directions": [
         "Place bacon in a nonstick skillet and cook over medium-high heat, turning occasionally, until evenly browned, about 7 minutes. Drain bacon slices on paper towels. Remove bacon to a drip line tray. Drain off bacon grease for another use. Wash out the skillet.",
         "Whisk eggs with salt and pepper in a small bowl until frothy.",
-        "Melt 2 teaspoons butter in the nonstick skillet over medium heat. Pour in beaten eggs; let cook for 30 seconds. Lift the edges of the omelet so that the uncooked egg runs under the cooked edges and comes into contact with the hot skillet. Shake and tilt the skillet to move the uncooked egg. Repeat until the top is set, about 3 minutes; reduce heat to low.", 
-        "Meanwhile, chop bacon roughly; sprinkle over omelet. Sprinkle with cheese; allow cheese to melt, 1 to 2 minutes.", 
-        "Meanwhile, butter 2 slices of bread with 1/2 teaspoon butter each. Lay bread, buttered side up, side-by-side over omelet, leaving about 1 inch between slices. The melted cheese will help the bread adhere.", 
-        "Run a spatula around the entire omelet to loosen from the skillet. Carefully turn the omelet over so buttered side of bread is in contact with the skillet. Cook until bread is toasted and golden, about 2 minutes.", 
+        "Melt 2 teaspoons butter in the nonstick skillet over medium heat. Pour in beaten eggs; let cook for 30 seconds. Lift the edges of the omelet so that the uncooked egg runs under the cooked edges and comes into contact with the hot skillet. Shake and tilt the skillet to move the uncooked egg. Repeat until the top is set, about 3 minutes; reduce heat to low.",
+        "Meanwhile, chop bacon roughly; sprinkle over omelet. Sprinkle with cheese; allow cheese to melt, 1 to 2 minutes.",
+        "Meanwhile, butter 2 slices of bread with 1/2 teaspoon butter each. Lay bread, buttered side up, side-by-side over omelet, leaving about 1 inch between slices. The melted cheese will help the bread adhere.",
+        "Run a spatula around the entire omelet to loosen from the skillet. Carefully turn the omelet over so buttered side of bread is in contact with the skillet. Cook until bread is toasted and golden, about 2 minutes.",
         "Using the spatula, fold in edges of omelet to align with sides of the bread. Cut omelet along center with the spatula to form 2 sandwiches. Butter 2 remaining bread slices with remaining butter; place butter side up on each sandwich. Turn sandwiches; cook until golden, about 2 minutes more. Serve and enjoy immediately!"
       ]
     },
@@ -34,8 +34,8 @@
         "2 tablespoons milk",
         "1/4 teaspoon salt",
         "1/8 teaspoon freshly ground black pepper",
-        "1/2 cup chopped fresh spinach", 
-        "1/2 cup chopped orange bell pepper", 
+        "1/2 cup chopped fresh spinach",
+        "1/2 cup chopped orange bell pepper",
         "1/4 cup crumbled feta cheese, plus more for garnish",
         "1 tablespoon sliced green onion, plus more for garnish"
       ],
@@ -172,109 +172,109 @@
         "Place chicken and potatoes into a large bowl. Pour olive oil over them, and stir to coat. Scatter the chicken and potato pieces in a large baking dish, or cookie sheet with sides. Sprinkle with rosemary, oregano, garlic powder, salt and pepper.",
         "Bake for 1 hour in the preheated oven, uncovered. Baste during the last 15 minutes for extra crispness."
       ]
-      },
-      {
-        "id": 9,
-        "name": "Slow Cooker Baby Back Ribs",
-        "image": "./images/SlowCookerBabyBackRibs.jpeg",
-        "type": "dinner",
-        "ingredients": [
-          "3 pounds baby back ribs, trimmed",
-          "salt and ground black pepper, to taste",
-          "½ cup water",
-          "½ onion, sliced",
-          "1 clove garlic, minced",
-          "1 (18 ounce) bottle barbeque sauce"
-        ],
-        "directions": [
-          "Season ribs with salt and pepper.",
-          "Pour 1/2 cup water into the slow cooker, then add ribs. Scatter onion and garlic over top. Cover and cook on Low for 8 hours or High for 4 hours.",
-          "When the ribs are almost finished, preheat the oven to 375 degrees F (190 degrees C).",
-          "Transfer ribs from the slow cooker to a baking sheet; discard onion and garlic. Coat ribs with barbeque sauce.",
-          "Bake ribs in the preheated oven until sauce caramelizes and sticks to meat, 10 to 15 minutes."
-        ]
-      },
-      {
-        "id": 10,
-        "name": "3 Ingredient Mango Ice Cream",
-        "image": "./images/3IngredientMangoIceCream.jpeg",
-        "type": "dessert",
-        "ingredients": [
-          "1 1/2 cupsmango puree (from 4 to 5 mangos",
-          "1 cup heavy cream",
-          "1/2 cup white sugar"
-        ],
-        "directions": [
-          "Peel and dice mangoes. Place in a blender and blend until pureed; measure out 1 1/2 cups puree; set aside. Refrigerate remaining puree for another use.",
-          "Whip heavy cream and sugar with an electric mixer on high speed until soft peaks form. Reduce the mixer speed to low and mix in mango puree.",
-          "Pour into Ninja® CREAMi™ containers or into a freezer-safe bowl. Freeze for 24 hours if using Ninja® CREAMi™ or for 8 hours to overnight if freezing in a container.",
-          "Following manufacturers instructions, insert the pint container into the outer bowl of Ninja® CREAMi™. Push “Ice Cream” button. If freezing in a container, remove from the freezer and let sit for 8 to 10 minutes or until soft enough to scoop."
-        ]
-      },
-      {
-        "id": 11,
-        "name": "Brownie Pie",
-        "image": "./images/BrowniePie.jpeg",
-        "type": "dessert",
-        "ingredients": [
-          "1 ¼ cups all-purpose flour, plus more for rolling",
-          "1 tablespoon granulated sugar",
-          "½ teaspoon kosher salt",
-          "½ cup cold unsalted butter, cut into 1/2-inch pieces",
-          "3 tablespoons ice water, or more as needed",
-          "10 tablespoons unsalted butter, melted and cooled",
-          "¾ cup granulated sugar",
-          "2 large eggs, at room temperature",
-          "1 large egg yolk, at room temperature",
-          "2 tablespoons canola oil",
-          "1 teaspoon vanilla extract",
-          "¾ cup unsweetened cocoa powder",
-          "½ cup all-purpose flour",
-          "2 teaspoons instant espresso granules",
-          "½ teaspoon kosher salt",
-          "½ cup chopped walnuts or hazelnuts",
-          "½ cup semisweet chocolate chips, divided"
-        ],
-        "directions": [
-          "For the crust, combine flour, sugar, and teaspoon salt in a food processor and pulse about 3 times until combined. Scatter cold butter over flour mixture in food processor. Pulse about 6 times until butter resembles pea-sized pieces. Drizzle 3 tablespoons water over butter mixture. Pulse about 6 times until couscous-like beads of dough form, adding 1 more tablespoon ice water if needed.",
-          "Transfer dough to a work surface, and press into a single mass. Shape and flatten dough into a disk.",
-          "Wrap in plastic wrap, and chill for at least 1 hour or up to 2 days.",
-          "Unwrap dough and place on a lightly floured work surface. Let dough sit at room temperature for 10 minutes to soften. Dust top of dough with flour. Using a lightly floured rolling pin, roll disk into a 12-inch circle.",
-          "Place in a 9-inch pie plate, pressing into bottom and up sides of pie plate. Fold edges under, and crimp as desired. Cover with plastic wrap, and freeze for 30 minutes.",
-          "Preheat the oven to 350 degrees F (175 degrees C). Place parchment paper over dough in pie plate; fill with pie weights or dried beans.",
-          "Bake in the preheated oven until crust is starting to set, about 15 minutes.",
-          "Carefully remove pie plate from oven and take off parchment paper and pie weights. Return pie plate to oven, and bake until pie crust is light golden brown, 8 to 12 minutes.",
-          "Transfer to a wire rack; let cool to room temperature, about 20 minutes.",
-          "Whisk together melted butter, sugar, eggs, egg yolk, canola oil, and vanilla extract in a bowl until blended and smooth. Whisk in cocoa, flour, instant espresso, and salt just until combined. Stir in nuts and 1/4 cup chocolate chips.",
-          "Scrape mixture into cooled crust, and smooth top with a small offset spatula. Sprinkle remaining 1/4 cup chocolate chips on top of the pie.",
-          "Bake in the preheated oven until a toothpick inserted in the center comes out clean, 30 to 35 minutes, covering the crust with aluminum foil if it gets too dark. Let cool 20 minutes before serving."
-        ]
-      },
-      {
-        "id": 12,
-        "name": "No-Bake Cheesecake I",
-        "image": "./images/NoBakeCheescakeI.jpeg",
-        "type": "dessert",
-        "ingredients": [
-          "¾ cup finely ground graham cracker crumbs",
-          "¾ cup pecan sandies cookies",
-          "3 tablespoons butter",
-          "3 tablespoons white sugar",
-          "8 ounces cream cheese",
-          "⅓ cup white sugar",
-          "2 tablespoons lemon juice",
-          "½ cup heavy whipping cream, whipped",
-          "½ cup sliced fresh strawberries (Optional)"
-        ],
-        "directions": [
-          "In a bowl, mix together crushed cookies and graham crackers with melted butter and the 3 tablespoons sugar.",
-          "Press into a 7 inch springform pan. Place in refrigerator until ready for use.",
-          "In another bowl, beat cream cheese, 1/3 cup of sugar and lemon juice.",
-          "Whip cream, and fold into cream cheese mixture.",
-          "Spread into pan.",
-          "Top with sliced strawberries (optional). Freeze for 1 hour, covered with foil.",
-          "Place in refrigerator 30 minutes before serving."
-        ]
-      }
+    },
+    {
+      "id": 9,
+      "name": "Slow Cooker Baby Back Ribs",
+      "image": "./images/SlowCookerBabyBackRibs.jpeg",
+      "type": "dinner",
+      "ingredients": [
+        "3 pounds baby back ribs, trimmed",
+        "salt and ground black pepper, to taste",
+        "½ cup water",
+        "½ onion, sliced",
+        "1 clove garlic, minced",
+        "1 (18 ounce) bottle barbeque sauce"
+      ],
+      "directions": [
+        "Season ribs with salt and pepper.",
+        "Pour 1/2 cup water into the slow cooker, then add ribs. Scatter onion and garlic over top. Cover and cook on Low for 8 hours or High for 4 hours.",
+        "When the ribs are almost finished, preheat the oven to 375 degrees F (190 degrees C).",
+        "Transfer ribs from the slow cooker to a baking sheet; discard onion and garlic. Coat ribs with barbeque sauce.",
+        "Bake ribs in the preheated oven until sauce caramelizes and sticks to meat, 10 to 15 minutes."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "3 Ingredient Mango Ice Cream",
+      "image": "./images/3IngredientMangoIceCream.jpeg",
+      "type": "dessert",
+      "ingredients": [
+        "1 1/2 cupsmango puree (from 4 to 5 mangos",
+        "1 cup heavy cream",
+        "1/2 cup white sugar"
+      ],
+      "directions": [
+        "Peel and dice mangoes. Place in a blender and blend until pureed; measure out 1 1/2 cups puree; set aside. Refrigerate remaining puree for another use.",
+        "Whip heavy cream and sugar with an electric mixer on high speed until soft peaks form. Reduce the mixer speed to low and mix in mango puree.",
+        "Pour into Ninja® CREAMi™ containers or into a freezer-safe bowl. Freeze for 24 hours if using Ninja® CREAMi™ or for 8 hours to overnight if freezing in a container.",
+        "Following manufacturers instructions, insert the pint container into the outer bowl of Ninja® CREAMi™. Push “Ice Cream” button. If freezing in a container, remove from the freezer and let sit for 8 to 10 minutes or until soft enough to scoop."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Brownie Pie",
+      "image": "./images/BrowniePie.jpeg",
+      "type": "dessert",
+      "ingredients": [
+        "1 ¼ cups all-purpose flour, plus more for rolling",
+        "1 tablespoon granulated sugar",
+        "½ teaspoon kosher salt",
+        "½ cup cold unsalted butter, cut into 1/2-inch pieces",
+        "3 tablespoons ice water, or more as needed",
+        "10 tablespoons unsalted butter, melted and cooled",
+        "¾ cup granulated sugar",
+        "2 large eggs, at room temperature",
+        "1 large egg yolk, at room temperature",
+        "2 tablespoons canola oil",
+        "1 teaspoon vanilla extract",
+        "¾ cup unsweetened cocoa powder",
+        "½ cup all-purpose flour",
+        "2 teaspoons instant espresso granules",
+        "½ teaspoon kosher salt",
+        "½ cup chopped walnuts or hazelnuts",
+        "½ cup semisweet chocolate chips, divided"
+      ],
+      "directions": [
+        "For the crust, combine flour, sugar, and teaspoon salt in a food processor and pulse about 3 times until combined. Scatter cold butter over flour mixture in food processor. Pulse about 6 times until butter resembles pea-sized pieces. Drizzle 3 tablespoons water over butter mixture. Pulse about 6 times until couscous-like beads of dough form, adding 1 more tablespoon ice water if needed.",
+        "Transfer dough to a work surface, and press into a single mass. Shape and flatten dough into a disk.",
+        "Wrap in plastic wrap, and chill for at least 1 hour or up to 2 days.",
+        "Unwrap dough and place on a lightly floured work surface. Let dough sit at room temperature for 10 minutes to soften. Dust top of dough with flour. Using a lightly floured rolling pin, roll disk into a 12-inch circle.",
+        "Place in a 9-inch pie plate, pressing into bottom and up sides of pie plate. Fold edges under, and crimp as desired. Cover with plastic wrap, and freeze for 30 minutes.",
+        "Preheat the oven to 350 degrees F (175 degrees C). Place parchment paper over dough in pie plate; fill with pie weights or dried beans.",
+        "Bake in the preheated oven until crust is starting to set, about 15 minutes.",
+        "Carefully remove pie plate from oven and take off parchment paper and pie weights. Return pie plate to oven, and bake until pie crust is light golden brown, 8 to 12 minutes.",
+        "Transfer to a wire rack; let cool to room temperature, about 20 minutes.",
+        "Whisk together melted butter, sugar, eggs, egg yolk, canola oil, and vanilla extract in a bowl until blended and smooth. Whisk in cocoa, flour, instant espresso, and salt just until combined. Stir in nuts and 1/4 cup chocolate chips.",
+        "Scrape mixture into cooled crust, and smooth top with a small offset spatula. Sprinkle remaining 1/4 cup chocolate chips on top of the pie.",
+        "Bake in the preheated oven until a toothpick inserted in the center comes out clean, 30 to 35 minutes, covering the crust with aluminum foil if it gets too dark. Let cool 20 minutes before serving."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "No-Bake Cheesecake I",
+      "image": "./images/NoBakeCheescakeI.jpeg",
+      "type": "dessert",
+      "ingredients": [
+        "¾ cup finely ground graham cracker crumbs",
+        "¾ cup pecan sandies cookies",
+        "3 tablespoons butter",
+        "3 tablespoons white sugar",
+        "8 ounces cream cheese",
+        "⅓ cup white sugar",
+        "2 tablespoons lemon juice",
+        "½ cup heavy whipping cream, whipped",
+        "½ cup sliced fresh strawberries (Optional)"
+      ],
+      "directions": [
+        "In a bowl, mix together crushed cookies and graham crackers with melted butter and the 3 tablespoons sugar.",
+        "Press into a 7 inch springform pan. Place in refrigerator until ready for use.",
+        "In another bowl, beat cream cheese, 1/3 cup of sugar and lemon juice.",
+        "Whip cream, and fold into cream cheese mixture.",
+        "Spread into pan.",
+        "Top with sliced strawberries (optional). Freeze for 1 hour, covered with foil.",
+        "Place in refrigerator 30 minutes before serving."
+      ]
+    }
   ]
 }

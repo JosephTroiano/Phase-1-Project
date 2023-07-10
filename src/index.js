@@ -66,6 +66,8 @@ function fetchRecipes() {
     });
 };
 
+
+
 // Function to create card for each recipe
 function createRecipeCard(recipe) {
     const recipeContainer = document.getElementById('recipe-container');
@@ -86,16 +88,23 @@ function createRecipeCard(recipe) {
 
     const viewRecipe = document.createElement('button');
     viewRecipe.id = 'details-btn';
-    viewRecipe.textContent = 'View Recipe';
+    viewRecipe.textContent = 'View';
     viewRecipe.addEventListener('click', () => {
         showRecipe(recipe.id);
     });
 
     const editRecipe = document.createElement('button');
     editRecipe.id = 'edit-btn'
-    editRecipe.textContent = 'Edit Recipe';
+    editRecipe.textContent = 'Edit';
     editRecipe.addEventListener('click', () => {
       editRecipeForm(recipe)
+    });
+
+    const deleteRecipe = document.createElement('button');
+    deleteRecipe.id = 'del-btn';
+    deleteRecipe.textContent = 'Delete';
+    deleteRecipe.addEventListener('click', () => {
+      deleteRecipeCard(recipe.id);
     });
     
     const favoriteButton = document.createElement('p');
@@ -109,6 +118,7 @@ function createRecipeCard(recipe) {
     recipeCard.appendChild(recipeImage);
     recipeCard.appendChild(viewRecipe);
     recipeCard.appendChild(editRecipe);
+    recipeCard.appendChild(deleteRecipe)
     
     recipeCard.appendChild(favoriteButton);
 
@@ -199,6 +209,7 @@ function showRecipe(recipeId) {
     if (isFavorite) {
       favoriteButton.textContent = '★';
       moveCardToFavorites(recipeCard);
+      showFavoriteAlert();
     } else {
       favoriteButton.textContent = '✩';
       removeCardFromFavorites(recipeCard);
@@ -213,6 +224,22 @@ function showRecipe(recipeId) {
   function removeCardFromFavorites(recipeCard) {
     const recipeContainer = document.getElementById('recipe-container');
     recipeContainer.appendChild(recipeCard);
+  }
+
+  // Function to show favorited alert
+  function showFavoriteAlert() {
+    const alertMessage = "Recipe added to Favorites ⬇";
+    const alertDuration = 2000;
+
+    const alertContainer = document.createElement('div');
+    alertContainer.classList.add('alert');
+    alertContainer.textContent = alertMessage;
+
+    document.body.appendChild(alertContainer);
+
+    setTimeout(() => {
+      alertContainer.remove();
+    }, alertDuration);
   }
   
   // Handle add recipe form functionality 
@@ -360,6 +387,7 @@ function editRecipeForm(recipe) {
 
   document.body.appendChild(overlay);
 }
+
 // Send edited recipe to server and update the card in the DOM
 function saveEditedRecipe(recipeId) {
   const nameInput = document.querySelector('#edit-recipe-form input[name="name"]');
@@ -401,6 +429,30 @@ function saveEditedRecipe(recipeId) {
     .then(response => response.json())
     .then(updatedRecipe => {
       
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
+
+// Function to handle deleting a recipe
+function deleteRecipeCard(recipeId) {
+  const recipeCard = document.getElementById(recipeId);
+  
+  
+  recipeCard.remove();
+
+  
+  const url = `http://localhost:3000/recipes/${recipeId}`;
+  fetch(url, {
+    method: 'DELETE'
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('Recipe deleted successfully');
+      } else {
+        throw new Error('Failed to delete recipe');
+      }
     })
     .catch(error => {
       console.error(error);
