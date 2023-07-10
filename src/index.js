@@ -209,10 +209,11 @@ function showRecipe(recipeId) {
     if (isFavorite) {
       favoriteButton.textContent = '★';
       moveCardToFavorites(recipeCard);
-      showFavoriteAlert();
+      showFavoriteAlert('Reciped added to Favorites ⬇');
     } else {
       favoriteButton.textContent = '✩';
       removeCardFromFavorites(recipeCard);
+      showFavoriteAlert('Recipe removed from Favorites')
     }
   }
   
@@ -227,13 +228,13 @@ function showRecipe(recipeId) {
   }
 
   // Function to show favorited alert
-  function showFavoriteAlert() {
-    const alertMessage = "Recipe added to Favorites ⬇";
+  function showFavoriteAlert(message) {
+  
     const alertDuration = 2000;
 
     const alertContainer = document.createElement('div');
     alertContainer.classList.add('alert');
-    alertContainer.textContent = alertMessage;
+    alertContainer.textContent = message
 
     document.body.appendChild(alertContainer);
 
@@ -270,7 +271,6 @@ function showRecipe(recipeId) {
   }
 
   // Send new recipe object to server and display it in the DOM
-
   function saveRecipe(recipe) {
 
     const typeSelect = document.getElementById('type');
