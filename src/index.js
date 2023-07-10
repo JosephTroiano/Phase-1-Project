@@ -16,18 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
 // Search for recipes by ingredients
 function searchRecipes(query) {
   const recipeCards = document.getElementsByClassName('recipe-card');
+  const searchIngredients = query.split(',').map(ingredient => ingredient.trim().toLowerCase());
 
   for (let i = 0; i < recipeCards.length; i++) {
     const recipeCard = recipeCards[i];
     const ingredients = recipeCard.dataset.ingredients.toLowerCase();
 
-    if (ingredients.includes(query)) {
+    const hasMatch = searchIngredients.some(searchIngredient => ingredients.includes(searchIngredient));
+
+    if (hasMatch) {
       recipeCard.style.display = 'block';
     } else {
       recipeCard.style.display = 'none';
     }
+    }
   }
-}
+
 
 // Function to handle filter change
 function handleFilterChange() {
@@ -270,7 +274,7 @@ function showRecipe(recipeId) {
     addRecipeForm.reset();
   }
 
-  // Send new recipe object to server and display it in the DOM
+  // Send new recipe object to server 
   function saveRecipe(recipe) {
 
     const typeSelect = document.getElementById('type');
