@@ -275,23 +275,6 @@
         "Top with sliced strawberries (optional). Freeze for 1 hour, covered with foil.",
         "Place in refrigerator 30 minutes before serving."
       ]
-    },
-    {
-      "name": "Poop",
-      "image": "https://m.media-amazon.com/images/I/41cUjUBqpxL.jpg",
-      "type": "dessert",
-      "ingredients": [
-        "poop",
-        "poop",
-        "poop"
-      ],
-      "directions": [
-        "poop",
-        "poop",
-        "poop"
-      ],
-      "likes": 0,
-      "id": 13
     }
   ]
 }
