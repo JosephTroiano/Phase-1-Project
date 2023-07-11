@@ -50,7 +50,7 @@
       "id": 3,
       "name": "Tres Leches Pancakes",
       "image": "./images/TresLechesPancakes.jpeg",
-      "type": "breakfast",
+      "type": "lunch",
       "ingredients": [
         "2/3 cup sweetened condensed milk",
         "1/2 cup evaporated milk",
